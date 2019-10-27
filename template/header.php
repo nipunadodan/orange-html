@@ -17,11 +17,9 @@
 
     <link href="<?php echo ASSETS_URL?>webfonts/sfui/sfui.css" rel="stylesheet" />
     <link href="<?php echo ASSETS_URL?>css/bootstrap.min.css" rel="stylesheet" />
-    <!--<link href="<?php /*echo ASSETS_URL*/?>css/jquery-ui.min.css" rel="stylesheet">-->
     <link href="<?php echo ASSETS_URL?>css/intlTelInput.min.css" rel="stylesheet">
     <link href="<?php echo ASSETS_URL?>css/datetimepicker.min.css" rel="stylesheet">
     <link href="<?php echo ASSETS_URL?>css/swiper.min.css" rel="stylesheet">
-    <!--<link href="<?php /*echo ASSETS_URL*/?>css/fresh-bootstrap-table.css" rel="stylesheet" />-->
     <link href="<?php echo ASSETS_URL?>webfonts/fontawesome/css/all.min.css" rel="stylesheet" >
     <link href="<?php echo ASSETS_URL?>webfonts/line-awesome/css/line-awesome.min.css" rel="stylesheet" >
     <link href="<?php echo ASSETS_URL?>css/styles.css" rel="stylesheet" />
@@ -30,10 +28,10 @@
     <script src="<?php echo ASSETS_URL?>js/bootstrap.bundle.min.js"></script>
     <script src="<?php echo ASSETS_URL?>js/datetimepicker.min.js"></script>
     <script src="<?php echo ASSETS_URL?>js/intlTelInput.min.js">
-        <script>var site_url = "<?php echo SITE_URL; ?>"</script>
-    <!--<script src="<?php /*echo ASSETS_URL*/?>js/ajax.js"></script>-->
-    <!--<script src="js/jquery-ui.min.js"></script>-->
+
+    <script>var site_url = "<?php echo SITE_URL; ?>"</script>
     <script src="<?php echo ASSETS_URL?>js/swiper.min.js"></script>
     <script src="<?php echo ASSETS_URL?>js/scripts.js"></script>
 </head>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="56">
