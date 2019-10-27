@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="http://nipunadodan.com/favicon.png">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,7 +23,8 @@
     <link href="<?php echo ASSETS_URL?>css/datetimepicker.min.css" rel="stylesheet">
     <link href="<?php echo ASSETS_URL?>css/swiper.min.css" rel="stylesheet">
     <!--<link href="<?php /*echo ASSETS_URL*/?>css/fresh-bootstrap-table.css" rel="stylesheet" />-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="<?php echo ASSETS_URL?>webfonts/fontawesome/css/all.min.css" rel="stylesheet" >
+    <link href="<?php echo ASSETS_URL?>webfonts/line-awesome/css/line-awesome.min.css" rel="stylesheet" >
     <link href="<?php echo ASSETS_URL?>css/styles.css" rel="stylesheet" />
 
     <script src="<?php echo ASSETS_URL?>js/jquery.min.js"></script>
