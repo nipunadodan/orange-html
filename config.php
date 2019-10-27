@@ -4,6 +4,7 @@ define("DOC_ROOT", dirname(realpath(__FILE__))."/");
 include_once DOC_ROOT.'env.php';
 define("SITE_URL", DOMAIN.SITE_ROOT);
 define("ASSETS_PATH", DOC_ROOT."assets/");
+define("ASSETS_URL", SITE_URL."assets/");
 define("PAGE_PATH", DOC_ROOT."pages/");
 define("TEMPLATE", 'default');
 define("TEMPLATE_PATH", DOC_ROOT."template/");
