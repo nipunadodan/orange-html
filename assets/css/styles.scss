@@ -6,7 +6,7 @@ body{
 }
 
 h1,h2,h3,h4,h5,h6{
-  font-family: 'SFUIDisplay-Light', sans-serif;
+  font-family: 'SFUIDisplay', sans-serif;
 }
 
 .text-normal{
@@ -18,21 +18,16 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .text-bold{
-  font-family: 'SFUIDisplay-Bold', sans-serif;
+  font-weight: 700;
 }
 
 /* SF Fonts */
 .SF-thin{
-  font-family: 'SFUIDisplay-Thin', sans-serif;
+  font-weight: 200;
 }
 
 h1.home-title{
-  font-family: 'SFUIDisplay-Bold', sans-serif;
-}
-
-h1.page-title{
-  font-family: 'SFUIDisplay-Bold', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 a{
@@ -46,6 +41,14 @@ a{
       //color: #ffffff !important;
     }
   }
+}
+
+.pre{
+  font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  font-size: 87.5%;
+  background: lighten($body_colour,75%);
+  padding: 5px 10px;
+  border-radius: 3px;
 }
 
 /* colours */
