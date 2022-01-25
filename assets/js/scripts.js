@@ -6,6 +6,7 @@ dyn_function['page-load'] = function (filename) {
     $.ajax({
         url:'pages/'+filename+'.html',
         type:'GET',
+        cache: false,
         error: function(xhr, textStatus, error){
             console.log(xhr.status+" "+textStatus+" "+error);
             $.get( "pages/404.html", function( data ) {
@@ -26,7 +27,7 @@ const splits = window.location.pathname.split('/');
 const page = splits[splits.length-1]
 
 $(document).ready(function (e) {
-    if(typeof page !== 'undefined')
+    if(typeof page !== 'undefined' &&  page !=='')
         dyn_function['page-load'](page);
     else
         dyn_function['page-load']('home');
