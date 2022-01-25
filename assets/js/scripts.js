@@ -6,6 +6,7 @@ dyn_function['page-load'] = function (filename) {
     $.ajax({
         url:'pages/'+filename+'.html',
         type:'GET',
+        cache: false,
         error: function(xhr, textStatus, error){
             console.log(xhr.status+" "+textStatus+" "+error);
             $.get( "pages/404.html", function( data ) {
@@ -22,10 +23,13 @@ dyn_function['page-load'] = function (filename) {
 };
 
 /*===================================================*/
-let searchParams = new URLSearchParams(window.location.search);
+const splits = window.location.pathname.split('/');
+const page = splits[splits.length-1]
+
 $(document).ready(function (e) {
-    if(searchParams.has('page'))
-        dyn_function['page-load'](searchParams.get('page'));
+    if(typeof page !== 'undefined' &&  page !=='')
+        dyn_function['page-load'](page);
     else
         dyn_function['page-load']('home');
 });
+
