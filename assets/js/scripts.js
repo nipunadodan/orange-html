@@ -22,10 +22,13 @@ dyn_function['page-load'] = function (filename) {
 };
 
 /*===================================================*/
-let searchParams = new URLSearchParams(window.location.search);
+const splits = window.location.pathname.split('/');
+const page = splits[splits.length-1]
+
 $(document).ready(function (e) {
-    if(searchParams.has('page'))
-        dyn_function['page-load'](searchParams.get('page'));
+    if(typeof page !== 'undefined')
+        dyn_function['page-load'](page);
     else
         dyn_function['page-load']('home');
 });
+

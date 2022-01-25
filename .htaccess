@@ -1,0 +1,6 @@
+Options +FollowSymLinks -MultiViews
+
+RewriteEngine on
+RewriteCond %{QUERY_STRING} !rewrite=no [NC]
+
+RewriteRule ^([A-Za-z0-9-_]+)/?$ index.html?page=$1 [L,QSA]
